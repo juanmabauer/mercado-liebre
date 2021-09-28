@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/login.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="box-top">
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo" width="360">
+                <form class="search-form" action="" method="GET">
+                    <div class="search-bar">
+                        <label></label>
+                        <input type="text" name="search" placeholder="Buscar productos, marcas y más">
+                    </div>
+                <i class="fas fa-search"></i>
+                </form>
+                <p class="compra-cuotas"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas sin tarjeta de crédito</p>
+            </div>
+            <nav class="box-bottom">
+                    <ul class="box-one">
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Tiendas Oficiales</a></li>
+                        <li><a href="#">Vender</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                    <ul class="box-two">
+                        <li><a href="/register">Crea tu cuenta </a><i class="far fa-id-card"></i></li>
+                        <li><a href="/login">Ingresá </a><i class="fas fa-sign-in-alt"></i></li>
+                        <li><a href="#">Mis Compras </a><i class="fas fa-shopping-basket"></i></li>
+                    </ul>
+                <div class="burguer-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <form class="formulario-padre" action="" method="POST">
+                <div class="formulario-hijo">
+                    <label ></label>
+                    <input type="text" name="user-name" placeholder="Nombre de usuari@">
+                </div>
+                <div class="formulario-hijo">
+                    <label></label>
+                    <input type="password" name="password" placeholder="Ingresa tu contraseña">
+                </div>
+                <button type="submit">Ingresar</button>
+            </form>
+        </main>
+        <footer class="footer">
+            &copy; 1999-2020 MercadoLiebre S.R.L.
+        </footer>
+    </body>
+</html>
