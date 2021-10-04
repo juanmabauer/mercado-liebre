@@ -1,14 +1,23 @@
+main {
+    margin-top: 200px;
+}
+
 .formulario-padre {
-    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #a5a1a1;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-radius: 15px;
 }
 
 .formulario-hijo {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 80%;
     margin-bottom: 4px;
 }
 .formulario-hijo input {
@@ -51,4 +60,11 @@ button {
     color: #fff;
     height: 3vh;
     margin: 8px;
+}
+
+
+@media (min-width: 769px) {
+    .formulario-padre {
+        width: 30%;
+    }
 }

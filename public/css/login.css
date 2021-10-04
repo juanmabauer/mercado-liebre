@@ -1,16 +1,23 @@
+main {
+    margin-top: 200px;
+}
+
 .formulario-padre {
-    margin: 15px;
+    background-color: #a5a1a1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 15px;
 }
-
 .formulario-hijo {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
-    width: 20%;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .formulario-hijo input {
@@ -20,19 +27,40 @@
 }
 
 .formulario-hijo input::placeholder {
-    font-size: 16px;
+    font-size: 14px;
     font-style: italic;
+}
+
+.opciones {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-top : 15px;
+}
+.opciones label {
+    margin-bottom: 10px;
+}
+.opciones a {
+    color: white;
 }
 
 button {
     border-radius: 8px;
     background-color: #1259c3;
     color: #fff;
-    height: 3vh;
-    margin: 8px;
+    height: 3.5vh;
+    margin: 20px;
+    margin-left: 40px;
     transition: background-color 900ms;
     cursor: pointer;
+    width: 60%;
 }
 button:hover {
     background-color: #0022AA;
+}
+
+@media (min-width: 769px) {
+    .formulario-padre {
+        width: 30%;
+    }
 }
