@@ -2,7 +2,7 @@ main {
     margin-top: 200px;
 }
 
-.formulario-padre {
+.formulario-padre-register {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,47 +14,47 @@ main {
     border-radius: 15px;
 }
 
-.formulario-hijo {
+.formulario-hijo-register {
     display: flex;
     flex-direction: column;
     width: 80%;
     margin-bottom: 4px;
 }
-.formulario-hijo input {
+.formulario-hijo-register input {
     border-radius: 4px;
     border: 1px solid black;
     height: 3vh;
 }
 
-.formulario-hijo input::placeholder {
+.formulario-hijo-register input::placeholder {
     font-style: italic;
 }
 
-.formulario-hijo label {
+.formulario-hijo-register label {
     font-weight: bold;
 }
-.formulario-hijo .label-hijo {
+.formulario-hijo-register .label-hijo {
     font-weight: normal;
     font-size: 14px;
     margin: 2px 0px;
 }
-.formulario-hijo .label-hijo input {
+.formulario-hijo-register .label-hijo input {
     margin-left: 5px;
     height: 2vh;
 }
 
-.formulario-hijo span {
+.formulario-hijo-register span {
     font-size: 12px;
 }
-.formulario-hijo .foto-usuario {
+.formulario-hijo-register .foto-usuario {
     background-color: #fff;
     height: 2.5vh;
 }
 
-.botones {
-    display: inline;
+.botones-register {
+    display: flex;
 }
-button {
+.botones-register button {
     border-radius: 8px;
     background-color: #1259c3;
     color: #fff;
@@ -64,7 +64,7 @@ button {
 
 
 @media (min-width: 769px) {
-    .formulario-padre {
+    .formulario-padre-register {
         width: 30%;
     }
 }

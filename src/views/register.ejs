@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("partials/head") %> <!--head-->
+    <body>
+        <%- include("partials/header") %> <!--header-->
+        <main>
+            <form class="formulario-padre-register" method="POST">
+                <div class="formulario-hijo-register">
+                    <label></label>
+                    <input type="text" name="full-name" placeholder="Nombre y apellido" required>
+                </div>
+                <div class="formulario-hijo-register">
+                    <label ></label>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="formulario-hijo-register">
+                    <label for="Fecha de nacimiento">Fecha de nacimiento</label>
+                    <input type="date" name="born-date" id="Fecha de nacimiento" required>
+                </div>
+                <div class="formulario-hijo-register">
+                    <label ></label>
+                    <input type="text" name="place" placeholder="Domicilio" required>
+                </div>
+                <div class="formulario-hijo-register">
+                    <label for="">Perfil de usuario</label>
+                    <label class="label-hijo">Comprador<input type="radio" name="user-profile" value="Comprador"></label>
+                    <label class="label-hijo">Vendedor<input type="radio" name="user-profile" value="Vendedor"></label>
+                </div>
+                <div class="formulario-hijo-register">
+                    <label >Categorías de interés</label>
+                    <label class="label-hijo">Electro<input type="checkbox" name="interested" value="Electro"></label>
+                    <label class="label-hijo">Moda<input type="checkbox" name="interested" value="Moda"></label>
+                    <label class="label-hijo">Hogar<input type="checkbox" name="interested" value="Hogar"></label>
+                    <label class="label-hijo">Juguetería<input type="checkbox" name="interested" value="Juguetería"></label>
+                    <label class="label-hijo">Vida sana<input type="checkbox" name="interested" value="Vida sana"></label>
+                </div>
+                <div class="formulario-hijo-register">
+                    <label >Foto de usuario</label>
+                    <input class="foto-usuario" type="file" name="avatar" accept=".jpg">
+                </div>
+                <div class="formulario-hijo-register">
+                    <label ></label>
+                    <input type="password" name="password" placeholder="Contraseña" required>
+                </div>
+                <div class="formulario-hijo-register">
+                    <label ></label>
+                    <input type="password" name="password" placeholder="Confirmar Contraseña" required>
+                </div>
+                <div class="botones-register">
+                    <button type="submit">Registrarse</button>
+                    <button type="reset">Borrar</button>
+                </div>
+            </form>
+        </main>
+        <%- include("partials/footer") %><!--footer-->
+    </body>
+</html>
